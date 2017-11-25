@@ -1,4 +1,4 @@
-** Interesting Why's and How's behind the Neural Net Black Box for Interviews**
+## Interesting Why's and How's in Deep Learning for Interviews
 
 
 1. Is cross entropy better than l2 loss?
