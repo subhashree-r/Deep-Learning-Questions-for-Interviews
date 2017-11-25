@@ -25,7 +25,7 @@ If the input of FC layer is 7*7*512, then set the size of filter to be 7. This t
 10. What happens when we initialize all weights to zero with ReLu activation?
 There will be no learning.
 11. How to calculate the effective receptive field given filter size, padding and stride? How to calculate the number of FLOPS required?
-No. of FLOPS : input depth * output depth * o/p_feature_map_width * o/p_feature_map_height * kernel_width * kernel_height
+No. of FLOPS : input depth x output depth x o/p_feature_map_width x o/p_feature_map_height x kernel_width x kernel_height
 12. What is the difference between model parallelism and data parallelism?
 Model parallelism – when the training is done by sharing the parameters across the different architectures. Data parallelism – when training is done by sharing the data across different GPUs.
 13. Can a neural network with single RELU (non-linearity) act as a linear classifier?
@@ -33,7 +33,7 @@ No
 14. Difference between l1 and l2 loss? Which is better?
 L1 loss is more robust to outliers, but has unstable solution and possible multiple solutions. L2 loss has stable solution and one solution.
 15. What is the role of filter size? How can it affect accuracy and computational efficiency? What is the ideal filter size to be chosen?
-Multiple small filters are better than 1 big filter. For e.g. three 3*3 filters instead of single 11*11 filter.
+Multiple small filters are better than 1 big filter. For e.g. three 3x3 filters instead of single 11x11 filter.
 16. How can you reduce the gap between validation and training loss?
 The problem of overfitting. Can be overcome using dropout, data augmentation.
 17. How would you increase the speed (fps) when employing deep learning in mobile platforms?
