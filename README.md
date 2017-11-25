@@ -1,3 +1,6 @@
+** Interesting Why's and How's behind the Neural Net Black Box for Interviews**
+
+
 1. Is cross entropy better than l2 loss?
 Cross entropy is better at learning(faster) when used with sigmoid activation. This is because the derivative of the cross entropy activation cancels the derivative of sigmoid during backpropogation . Since derivative of sigmoid saturates at 1 and zero and slows down training, when the derivative ofsigmoid term is cancelled, learning is faster and prevents vanishing gradient problem.
 2. What happens when pooling is removed completely? What are the advantages of removing the pooling? What are the advantages of max pooling?
