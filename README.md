@@ -10,8 +10,8 @@ Advantages of pooling:
 If there is no pooling, the network learns its own spatial pooling as usually the pooling layer has no parameters.
 3. What is the role of zero padding?
 Zero padding is used to not lose the pixels (information) in the boundary and to make the output feature map of fixed dimension.
-4. What are 1*1 convolutions and how do they help?
-1*1 convolutions help in reducing the number of parameters(features). It was mainly used in Inception network. It helps introduce more non-linearity through activations without making the network deeper.
+4. What are 1x1 convolutions and how do they help?
+1x1 convolutions help in reducing the number of parameters(features). It was mainly used in Inception network. It helps introduce more non-linearity through activations without making the network deeper.
 5. How does batch norm help overcome vanishing gradient?
 Batch normalization helps in getting rid of outliers and hence leads to faster convergence.
 6. How does relu solve vanishing gradient?
