@@ -11,9 +11,9 @@ If there is no pooling, the network learns its own spatial pooling as usually th
 3. What is the role of zero padding?
 Zero padding is used to not lose the pixels (information) in the boundary and to make the output feature map of fixed dimension.
 4. What are 1x1 convolutions and how do they help?
-1x1 convolutions help in reducing the number of parameters(features). It was mainly used in Inception network. It helps introduce more non-linearity through activations without making the network deeper.
+1x1 convolutions help in reducing the number of parameters by reducing the number of filter size. It was mainly used in Inception network. If the input is W X H X F1, after F2 1X1 filters, the output will be W X H X F2 wherein the F2 can be less than F1. It helps introduce more non-linearity through activations after every 1x1 convolution without making the network deeper.
 5. How does batch norm help overcome vanishing gradient?
-Batch normalization helps in getting rid of outliers and hence leads to faster convergence.
+Batch normalization helps in getting rid of outliers and hence leads to faster convergence. In batch normalization, input to every layer in the network is made zero mean and unit variance due to which the overall input to the activation will be centered around zero of the gaussian distribution. This implies that the input will be closer to zero and hence activation like sigmoid which saturates(becomes zero) due to its bell shape curve will not make gradients zero as its input is in the centre.
 6. How does relu solve vanishing gradient?
 The function is linear and does not saturate.
 7. What happens when we decrease the batch size to 1? What happens when we make the batch size equal to size of the dataset?
