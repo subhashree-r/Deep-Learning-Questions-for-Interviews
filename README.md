@@ -17,7 +17,7 @@ Batch normalization helps in getting rid of outliers and hence leads to faster c
 6. How does relu solve vanishing gradient?
 The function is linear and does not saturate.
 7. What happens when we decrease the batch size to 1? What happens when we make the batch size equal to size of the dataset?
-When batch size is 1, the gradient descent is very random, and might take longer to converge. But the memory requirement is very less. When the batch size is equal to the entire batch, it requires lot of memory. Also, it might lead to sharp convergence due to which the network can overfit. Stochastic gradient descent reaches smooth minimum.
+When batch size is 1, the gradient descent is very random, and might take longer to converge. But the memory requirement is very less. When the batch size is equal to the entire batch, it requires lot of memory. Also, it might lead to sharp convergence due to which the network can overfit. Mini-batch gradient descent reaches smooth minimum.
 8. What is dilation?
 The filters have spaces between cells. Hence there is a gap of 1 when applying the convolution. This helps in more aggressive spatial pooling and the effective receptive field grows much quickly.
 9. Can FC be converted to convolutional layer?
